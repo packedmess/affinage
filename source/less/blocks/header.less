@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15.8px 20px;
+  z-index: 100;
+}
+
+.header__logo-image {
+  display: block;
+}
+
+.header__navigation-toggle {
+  position: relative;
+  width: 20px;
+  height: 14px;
+  background: none;
+  border: none;
+}
+
+.header__navigation-toggle:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+  cursor: pointer;
+}
+
+@media (min-width: @desktop-width) {
+
+}

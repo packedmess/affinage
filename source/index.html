@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Affinage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/Geometria-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-LightItalic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Heavy.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-HeavyItalic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Philosopher-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Philosopher-Italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Philosopher-Bold.woff2" as="font" crossorigin="anonymous">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="/">
+        <img class="header__logo-image" src="img/logo.svg" width="22.8" height="23.21" alt="Affinage">
+      </a>
+      <button class="header__navigation-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </header>
+    <main class="main">
+      <section class="slider">
+        <div class="slider__back">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/slide-2-desktop@1x.webp 1x, img/slide-2-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/slide-2-mobile@1x.webp 1x, img/slide-2-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/slide-2-desktop@1x.jpg 1x, img/slide-2-desktop@2x.jpg 2x">
+            <img class="slider__front-image" src="img/slide-2-mobile@1x.jpg" srcset="img/slide-2-mobile@2x.jpg 2x" width="280.4" height="184.11" alt="Slide-2">
+          </picture>
+        </div>
+        <div class="slider__front">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/slide-1-desktop@1x.webp 1x, img/slide-1-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/slide-1-mobile@1x.webp 1x, img/slide-1-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/slide-1-desktop@1x.jpg 1x, img/slide-1-desktop@2x.jpg 2x">
+            <img class="slider__front-image" src="img/slide-1-mobile@1x.jpg" srcset="img/slide-1-mobile@2x.jpg 2x" width="558.12" height="318" alt="Slide-1">
+          </picture>
+        </div>
+      </section>
+      <section class="decor">
+        <div class="decor__item-1"></div>
+        <div class="decor__item-2"></div>
+        <div class="decor__item-3"></div>
+        <div class="decor__item-4"></div>
+        <div class="decor__item-5"></div>
+      </section>
+    </main>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  </body>
+</html>

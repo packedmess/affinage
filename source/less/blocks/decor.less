@@ -1,0 +1,126 @@
+.decor {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.decor__item-1:before {
+  content: "";
+  position: absolute;
+  width: 48%;
+  height: 177px;
+  top: -42px;
+  left: 52%;
+  background: url(../img/trapezoid.svg) no-repeat;
+  z-index: 0;
+}
+
+.decor__item-1:after {
+  content: "очень хороший слоган";
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  top: 41%;
+  left: -30px;
+  .philosopher-italic;
+  font-size: 9px;
+  transform: rotate(270deg);
+  opacity: 0.5;
+  z-index: 100;
+}
+
+.decor__item-2:before {
+  content: "";
+  position: absolute;
+  width: 22.8px;
+  height: 23.21px;
+  bottom: 56%;
+  right: 9%;
+  background: url(../img/triangle.svg) no-repeat;
+  z-index: 100;
+}
+
+.decor__item-2:after {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 75px;
+  top: 22%;
+  right: 20.5%;
+  background: url(../img/E.svg) no-repeat;
+  z-index: 100;
+}
+
+.decor__item-3:before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 75px;
+  top: 36%;
+  right: 40%;
+  background: url(../img/G.svg) no-repeat;
+  z-index: 10;
+}
+
+.decor__item-3:after {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 75px;
+  top: 38.5%;
+  right: 64.5%;
+  background: url(../img/A.svg) no-repeat;
+  z-index: 100;
+}
+
+.decor__item-4:before {
+  content: "";
+  position: absolute;
+  width: 22.8px;
+  height: 24.5px;
+  bottom: 29px;
+  left: 14%;
+  background: url(../img/triangle-transparent.svg) no-repeat;
+  z-index: 100;
+}
+
+.decor__item-4:after {
+  content: "";
+  position: absolute;
+  width: 109.3px;
+  height: 54.65px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../img/coronal.svg) no-repeat;
+  z-index: 100;
+}
+
+.decor__item-5:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  border-left: 52px solid transparent;
+  border-top: 52px solid transparent;
+  border-right: 52px solid @base-color;
+  border-bottom: 52px solid @base-color;
+  z-index: 100;
+}
+
+.decor__item-5:after {
+  content: "13";
+  position: absolute;
+  width: 24px;
+  height: 27px;
+  bottom: 16px;
+  right: 18px;
+  .geometria-heavy-italic;
+  font-size: 20px;
+  letter-spacing: 2px;
+  z-index: 100;
+}
