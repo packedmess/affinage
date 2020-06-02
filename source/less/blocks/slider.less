@@ -6,6 +6,10 @@
   display: block;
 }
 
+.slider__title {
+  display: none;
+}
+
 .slider__back {
   position: relative;
   width: 236px;
@@ -51,6 +55,7 @@
   transform: rotate(45deg) translateY(-50%);
   opacity: 0.4;
   z-index: 100;
+  cursor: pointer;
 }
 
 .slider__front:after {
@@ -59,12 +64,13 @@
   width: 22px;
   height: 22px;
   top: 50%;
-  right: 8%;
+  right: 11%;
   border-top: 4px solid #000000;
   border-right: 4px solid #000000;
   transform: rotate(45deg) translateY(-50%);
   opacity: 0.4;
   z-index: 100;
+  cursor: pointer;
 }
 
 .slider__front picture {
@@ -74,4 +80,53 @@
 
 .slider__front img {
   opacity: 0.4;
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    padding: 97px 0 126px;
+  }
+
+  .slider__title {
+    display: block;
+    position: absolute;
+    width: 995px;
+    height: 152px;
+    top: 325px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    .philosopher-regular;
+    font-size: 140px;
+    line-height: 152px;
+    text-transform: uppercase;
+    letter-spacing: 50.5px;
+    color: #FFFFFF;
+    z-index: 110;
+  }
+
+  .slider__back {
+    width: 800px;
+    height: 525px;
+  }
+
+  .slider__front {
+    width: 860px;
+    height: 490px;
+    margin: -438px 0 0 auto;
+  }
+
+  .slider__front:before {
+    top: 314px;
+    left: 480px;
+  }
+
+  .slider__front:after {
+    top: 314px;
+    right: 173px;
+  }
+
+  .slider__front img {
+    opacity: 0.2;
+  }
 }

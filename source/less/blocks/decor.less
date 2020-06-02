@@ -124,3 +124,202 @@
   letter-spacing: 2px;
   z-index: 100;
 }
+
+@media (min-width: @tablet-width) {
+  .decor__item-1:before {
+    width: 48%;
+    height: 177px;
+    top: 113px;
+    left: 6.4%;
+    transform: rotate(270deg);
+    background: url(../img/trapezoid.svg) no-repeat;
+    z-index: 30;
+  }
+
+  .decor__item-1:after {
+    top: 478px;
+    left: 273px;
+  }
+
+  .decor__item-2:before {
+    top: 735px;
+    right: 15%;
+  }
+
+  .decor__item-2:after {
+    width: 51px;
+    height: 101px;
+    top: 117px;
+    right: 16.3%;
+    background-size: cover;
+    z-index: 10;
+  }
+
+  .decor__item-3:before {
+    width: 62px;
+    height: 101px;
+    top: 195px;
+    right: 21.8%;
+    background-size: cover;
+    z-index: 30;
+  }
+
+  .decor__item-3:after {
+    width: 61px;
+    height: 101px;
+    top: 35px;
+    right: 27.7%;
+    background-size: cover;
+  }
+
+  .decor__item-4:before {
+    top: 753px;
+    left: 67%;
+  }
+
+  .decor__item-4:after {
+    width: 160px;
+    height: 112.1px;
+    background-size: cover;
+  }
+
+  .decor__item-5:before {
+    width: 138px;
+    height: 383px;
+    top: 255px;
+    bottom: auto;
+    right: 19.3%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    background: @base-color;
+  }
+
+  .decor__item-5:after {
+    width: 49px;
+    height: 57px;
+    top: 568px;
+    bottom: auto;
+    right: 24%;
+    font-size: 45px;
+    letter-spacing: 4px;
+  }
+
+  .decor__item-6:before {
+    content: "тестовое задание";
+    position: fixed;
+    width: 115px;
+    height: 15px;
+    top: 385px;
+    left: -33px;
+    .geometria-light-italic;
+    font-size: 12px;
+    transform: rotate(270deg);
+    opacity: 0.4;
+    z-index: 100;
+  }
+
+  .decor__item-6:after {
+    content: "51";
+    position: absolute;
+    width: 31px;
+    height: 36px;
+    top: 127px;
+    right: 58.5%;
+    .geometria-heavy;
+    font-size: 28px;
+    letter-spacing: 2px;
+    transform: rotate(270deg);
+    opacity: 0.5;
+    z-index: 100;
+  }
+
+  .decor__item-7:before {
+    content: "(1) (3)";
+    position: absolute;
+    width: 18px;
+    height: 100px;
+    top: 148px;
+    left: 15.5%;
+    .geometria-light;
+    line-height: 80px;
+    font-size: 14px;
+    z-index: 100;
+  }
+
+  .decor__item-7:after {
+    content: "URAL 03";
+    position: absolute;
+    width: 55px;
+    height: 42px;
+    top: 245px;
+    left: 42.4%;
+    .geometria-regular;
+    line-height: 21px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    z-index: 100;
+  }
+
+  .decor__item-8:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 215px;
+    left: 40.6%;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    z-index: 100;
+  }
+
+  .decor__item-8:after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 3px;
+    top: 593px;
+    left: 76.5%;
+    background: #000000;
+    z-index: 100;
+  }
+
+  .decor__item-9:before {
+    content: "7";
+    position: absolute;
+    width: 10px;
+    height: 21px;
+    top: 598px;
+    left: 76.4%;
+    .geometria-heavy-italic;
+    font-size: 17px;
+    z-index: 100;
+  }
+
+  .decor__item-9:after {
+    content: "";
+    position: absolute;
+    width: 213px;
+    height: 10px;
+    top: 706px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: @base-color;
+    opacity: 0.75;
+    z-index: 100;
+  }
+
+  .decor__item-10:before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: calc(100% - 89px);
+    top: 184px;
+    right: 50%;
+    background: linear-gradient(200deg, transparent, #FFFFFF);
+    opacity: 0.65;
+    z-index: 5;
+  }
+}
