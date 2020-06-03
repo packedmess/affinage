@@ -1,12 +1,19 @@
 .header {
-  display: flex;
   position: fixed;
   width: 100%;
+  top: 0;
+  z-index: 200;
+}
+
+.header__wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   padding: 15.8px 20px;
-  z-index: 100;
+  margin: 0 auto;
 }
 
 .header__logo-image {
@@ -34,9 +41,12 @@
   cursor: pointer;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .header {
     position: absolute;
+  }
+
+  .header__wrapper {
     align-items: flex-start;
     padding: 34.8px 80px 30px 34.4px;
   }

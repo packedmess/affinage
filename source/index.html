@@ -21,12 +21,16 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="/">
-        <img class="header__logo-image" src="img/logo.svg" width="22.8" height="23.21" alt="Affinage">
-      </a>
-      <button class="header__navigation-toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="header__wrapper">
+        <a class="header__logo" href="/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22.802" height="23.213" viewBox="0 0 22.802 23.213">
+            <path id="path14" d="M286.95-832.57l4.314,10.066H282.43l4.519-10.066ZM300.3-815.109c-.411,0-.822-.205-1.233-.205a4.491,4.491,0,0,1-1.027-.616,4.3,4.3,0,0,1-.822-1.232,11.463,11.463,0,0,1-1.027-1.643l-7.6-18.694h-1.027L277.5-814.287h1.438l2.876-6.779h10.271l.822,2.26a7.105,7.105,0,0,0,1.438,2.465,5.538,5.538,0,0,0,1.643,1.438,14.141,14.141,0,0,0,1.643.616h2.67v-.822" transform="translate(-277.5 837.5)" fill="#131212" fill-rule="evenodd"/>
+          </svg>
+        </a>
+        <button class="header__navigation-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
     </header>
     <main class="main">
       <section class="slider">
@@ -46,9 +50,17 @@
             <source media="(min-width: 1200px)" srcset="img/slide-1-desktop@1x.jpg 1x, img/slide-1-desktop@2x.jpg 2x">
             <img class="slider__front-image" src="img/slide-1-mobile@1x.jpg" srcset="img/slide-1-mobile@2x.jpg 2x" alt="Slide-1">
           </picture>
+          <div class="slider__controls">
+              <button class="slider__control slider__control--prev" type="button">
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button class="slider__control slider__control--next" type="button">
+                <span class="visually-hidden">Вперед</span>
+              </button>
+            </div>
         </div>
       </section>
-      <section class="decor">
+      <div class="decor">
         <div class="decor__item-1"></div>
         <div class="decor__item-2"></div>
         <div class="decor__item-3"></div>
@@ -60,7 +72,11 @@
         <div class="decor__item-9"></div>
         <div class="decor__item-10"></div>
         <div class="decor__item-11"></div>
-      </section>
+        <div class="decor__item-12"></div>
+        <div class="decor__item-13"></div>
+        <div class="decor__item-14"></div>
+        <div class="decor__item-15"></div>
+      </div>
     </main>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>

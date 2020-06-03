@@ -4,15 +4,23 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
+  max-width: 1440px;
   height: 100vh;
+  margin: 0 auto;
   background: @base-color;
 }
 
 @media (min-width: @tablet-width) {
   .main {
+    justify-content: center;
+    padding: 0 80px;
+    background: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main {
     height: auto;
     justify-content: flex-start;
-    padding: 0 80px;
-    background: linear-gradient(90deg, #F1F1F1 50%, #FFFFFF 50%);
   }
 }

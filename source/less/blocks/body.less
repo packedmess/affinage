@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   min-width: 320px;
   .geometria-regular;
   font-size: 17px;
@@ -7,4 +8,10 @@ body {
   padding: 0;
   color: #000000;
   background: #FFFFFF;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background: linear-gradient(90deg, #F1F1F1 50%, #FFFFFF 50%);
+  }
 }

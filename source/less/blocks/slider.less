@@ -1,4 +1,6 @@
 .slider {
+  position: relative;
+  width: 100%;
   padding: 83px 0 0;
 }
 
@@ -43,34 +45,29 @@
   z-index: 20;
 }
 
-.slider__front:before {
+.slider__control {
   content: "";
   position: absolute;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   top: 50%;
-  left: 5%;
+  border: none;
   border-left: 4px solid #000000;
   border-bottom: 4px solid #000000;
-  transform: rotate(45deg) translateY(-50%);
+  background: none;
   opacity: 0.4;
-  z-index: 100;
+  z-index: 200;
   cursor: pointer;
 }
 
-.slider__front:after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 50%;
-  right: 11%;
-  border-top: 4px solid #000000;
-  border-right: 4px solid #000000;
-  transform: rotate(45deg) translateY(-50%);
-  opacity: 0.4;
-  z-index: 100;
-  cursor: pointer;
+.slider__control--prev {
+  left: 8%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.slider__control--next {
+  right: 8%;
+  transform: translateY(-50%) rotate(225deg);
 }
 
 .slider__front picture {
@@ -84,25 +81,48 @@
 
 @media (min-width: @tablet-width) {
   .slider {
-    padding: 97px 0 126px;
+    padding: 80px 0 0;
   }
 
   .slider__title {
     display: block;
     position: absolute;
+    width: 495px;
+    height: 70px;
+    top: 50%;
+    left: calc(50% - 247.5px);
+    margin: 0;
+    .philosopher-regular;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    color: #FFFFFF;
+    z-index: 110;
+  }
+
+  .slider__back {
+    width: 281px;
+  }
+
+  .slider__front img {
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider {
+    padding: 97px 0 126px;
+  }
+
+  .slider__title {
     width: 995px;
     height: 152px;
     top: 325px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    .philosopher-regular;
+    left: calc(50% - 497.5px);
     font-size: 140px;
     line-height: 152px;
-    text-transform: uppercase;
     letter-spacing: 50.5px;
-    color: #FFFFFF;
-    z-index: 110;
   }
 
   .slider__back {
@@ -116,17 +136,15 @@
     margin: -438px 0 0 auto;
   }
 
-  .slider__front:before {
-    top: 314px;
-    left: 480px;
+  .slider__control {
+    top: 317px;
   }
 
-  .slider__front:after {
-    top: 314px;
-    right: 173px;
+  .slider__control--prev {
+    left: 490px;
   }
 
-  .slider__front img {
-    opacity: 0.2;
+  .slider__control--next {
+    right: 165px;
   }
 }

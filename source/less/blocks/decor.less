@@ -1,7 +1,7 @@
 .decor {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
 }
@@ -125,14 +125,13 @@
   z-index: 100;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .decor__item-1:before {
-    width: 48%;
+    width: 282px;
     height: 177px;
-    top: 113px;
-    left: 6.4%;
+    top: 318px;
+    left: 20.5%;
     transform: rotate(270deg);
-    background: url(../img/trapezoid.svg) no-repeat;
     z-index: 30;
   }
 
@@ -180,6 +179,8 @@
   .decor__item-4:after {
     width: 160px;
     height: 112.1px;
+    top: 594px;
+    bottom: auto;
     background-size: cover;
   }
 
@@ -188,7 +189,7 @@
     height: 383px;
     top: 255px;
     bottom: auto;
-    right: 19.3%;
+    right: 278px;
     border-left: none;
     border-top: none;
     border-right: none;
@@ -208,11 +209,11 @@
 
   .decor__item-6:before {
     content: "тестовое задание";
-    position: fixed;
+    position: absolute;
     width: 115px;
     height: 15px;
     top: 385px;
-    left: -33px;
+    left: -2.3%;
     .geometria-light-italic;
     font-size: 12px;
     transform: rotate(270deg);
@@ -314,12 +315,143 @@
   .decor__item-10:before {
     content: "";
     position: absolute;
-    width: 600px;
-    height: calc(100% - 89px);
+    width: 41.66%;
+    height: 616px;
     top: 184px;
     right: 50%;
     background: linear-gradient(200deg, transparent, #FFFFFF);
     opacity: 0.65;
     z-index: 5;
+  }
+
+  .decor__item-10:after {
+    content: "";
+    position: absolute;
+    width: 22.8px;
+    height: 23.21px;
+    bottom: auto;
+    top: 693px;
+    right: 85%;
+    background: url(../img/triangle.svg) no-repeat;
+    z-index: 100;
+  }
+
+  .decor__item-11:before {
+    content: "";
+    position: absolute;
+    width: 22.8px;
+    height: 18px;
+    bottom: auto;
+    top: 782px;
+    right: 67%;
+    background: url(../img/triangle-transparent.svg) no-repeat;
+    z-index: 100;
+  }
+
+  .decor__item-11:after {
+    content: "A";
+    position: absolute;
+    width: 17px;
+    height: 28px;
+    top: 745px;
+    left: 18.5%;
+    .philosopher-bold;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .decor__item-12:before {
+    content: "F";
+    position: absolute;
+    width: 13px;
+    height: 28px;
+    top: 710px;
+    left: 23%;
+    .philosopher-bold;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .decor__item-12:after {
+    content: "F";
+    position: absolute;
+    width: 13px;
+    height: 28px;
+    top: 755px;
+    left: 27.5%;
+    .philosopher-bold;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .decor__item-13:before {
+    content: "I";
+    position: absolute;
+    width: 8px;
+    height: 28px;
+    top: 727px;
+    left: 31.6%;
+    .philosopher-bold;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .decor__item-13:after {
+    content: "N";
+    position: absolute;
+    width: 17px;
+    height: 28px;
+    top: 766px;
+    left: 36.2%;
+    .philosopher-bold;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .decor__item-14:before {
+    content: "A";
+    position: absolute;
+    width: 17px;
+    height: 28px;
+    top: 725px;
+    left: 64.6%;
+    .philosopher-bold;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .decor__item-14:after {
+    content: "G";
+    position: absolute;
+    width: 18px;
+    height: 28px;
+    top: 731px;
+    left: 71.6%;
+    .philosopher-bold;
+    font-size: 25px;
+    z-index: 100;
+  }
+
+  .decor__item-15:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    top: 733px;
+    left: 71.4%;
+    background: url("../img/G-background.svg") no-repeat;
+    z-index: 90;
+  }
+
+  .decor__item-15:after {
+    content: "E";
+    position: absolute;
+    width: 15px;
+    height: 28px;
+    top: 758px;
+    left: 79.4%;
+    .philosopher-bold;
+    font-size: 25px;
+    z-index: 100;
   }
 }
