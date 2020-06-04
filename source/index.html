@@ -36,28 +36,40 @@
       <section class="slider">
         <h1 class="slider__title">Affinage</h1>
         <div class="slider__back">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/slide-2-desktop@1x.webp 1x, img/slide-2-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/slide-2-mobile@1x.webp 1x, img/slide-2-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/slide-2-desktop@1x.jpg 1x, img/slide-2-desktop@2x.jpg 2x">
-            <img class="slider__front-image" src="img/slide-2-mobile@1x.jpg" srcset="img/slide-2-mobile@2x.jpg 2x" alt="Slide-2">
+          <picture class="slider__back-item">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/slide-2-desktop.webp">
+            <source type="image/webp" srcset="img/slide-2-mobile.webp">
+            <source media="(min-width: 1200px)" srcset="img/slide-2-desktop.jpg">
+            <img src="img/slide-2-mobile.jpg" alt="Slide-2">
+          </picture>
+          <picture class="slider__back-item">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/slide-1-desktop.webp">
+            <source type="image/webp" srcset="img/slide-1-mobile.webp">
+            <source media="(min-width: 1200px)" srcset="img/slide-1-desktop.jpg">
+            <img src="img/slide-1-mobile.jpg" alt="Slide-1">
           </picture>
         </div>
         <div class="slider__front">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/slide-1-desktop@1x.webp 1x, img/slide-1-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/slide-1-mobile@1x.webp 1x, img/slide-1-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/slide-1-desktop@1x.jpg 1x, img/slide-1-desktop@2x.jpg 2x">
-            <img class="slider__front-image" src="img/slide-1-mobile@1x.jpg" srcset="img/slide-1-mobile@2x.jpg 2x" alt="Slide-1">
+          <picture class="slider__front-item">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/slide-1-desktop.webp">
+            <source type="image/webp" srcset="img/slide-1-mobile.webp">
+            <source media="(min-width: 1200px)" srcset="img/slide-1-desktop.jpg">
+            <img src="img/slide-1-mobile.jpg" alt="Slide-1">
+          </picture>
+          <picture class="slider__front-item">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/slide-2-desktop.webp">
+            <source type="image/webp" srcset="img/slide-2-mobile.webp">
+            <source media="(min-width: 1200px)" srcset="img/slide-2-desktop.jpg">
+            <img src="img/slide-2-mobile.jpg" alt="Slide-2">
           </picture>
           <div class="slider__controls">
-              <button class="slider__control slider__control--prev" type="button">
-                <span class="visually-hidden">Назад</span>
-              </button>
-              <button class="slider__control slider__control--next" type="button">
-                <span class="visually-hidden">Вперед</span>
-              </button>
-            </div>
+            <button class="slider__control slider__control--prev" type="button">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="slider__control slider__control--next" type="button">
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </div>
         </div>
       </section>
       <div class="decor">
@@ -80,5 +92,6 @@
     </main>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
+  <script src="js/slider.min.js"></script>
   </body>
 </html>

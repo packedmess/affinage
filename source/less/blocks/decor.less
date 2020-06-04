@@ -6,7 +6,7 @@
   left: 0;
 }
 
-.decor__item-1:before {
+.decor__item-1::before {
   content: "";
   position: absolute;
   width: 48%;
@@ -17,7 +17,7 @@
   z-index: 0;
 }
 
-.decor__item-1:after {
+.decor__item-1::after {
   content: "очень хороший слоган";
   position: absolute;
   width: 100px;
@@ -25,13 +25,14 @@
   top: 41%;
   left: -30px;
   .philosopher-italic;
+
   font-size: 9px;
   transform: rotate(270deg);
   opacity: 0.5;
   z-index: 100;
 }
 
-.decor__item-2:before {
+.decor__item-2::before {
   content: "";
   position: absolute;
   width: 22.8px;
@@ -42,7 +43,7 @@
   z-index: 100;
 }
 
-.decor__item-2:after {
+.decor__item-2::after {
   content: "";
   position: absolute;
   width: 38px;
@@ -53,7 +54,7 @@
   z-index: 100;
 }
 
-.decor__item-3:before {
+.decor__item-3::before {
   content: "";
   position: absolute;
   width: 46px;
@@ -64,7 +65,7 @@
   z-index: 10;
 }
 
-.decor__item-3:after {
+.decor__item-3::after {
   content: "";
   position: absolute;
   width: 46px;
@@ -75,7 +76,7 @@
   z-index: 100;
 }
 
-.decor__item-4:before {
+.decor__item-4::before {
   content: "";
   position: absolute;
   width: 22.8px;
@@ -86,7 +87,7 @@
   z-index: 100;
 }
 
-.decor__item-4:after {
+.decor__item-4::after {
   content: "";
   position: absolute;
   width: 109.3px;
@@ -98,7 +99,7 @@
   z-index: 100;
 }
 
-.decor__item-5:before {
+.decor__item-5::before {
   content: "";
   position: absolute;
   width: 0;
@@ -112,7 +113,7 @@
   z-index: 100;
 }
 
-.decor__item-5:after {
+.decor__item-5::after {
   content: "13";
   position: absolute;
   width: 24px;
@@ -120,13 +121,14 @@
   bottom: 16px;
   right: 18px;
   .geometria-heavy-italic;
+
   font-size: 20px;
   letter-spacing: 2px;
   z-index: 100;
 }
 
 @media (min-width: @desktop-width) {
-  .decor__item-1:before {
+  .decor__item-1::before {
     width: 282px;
     height: 177px;
     top: 318px;
@@ -135,17 +137,17 @@
     z-index: 30;
   }
 
-  .decor__item-1:after {
+  .decor__item-1::after {
     top: 478px;
     left: 273px;
   }
 
-  .decor__item-2:before {
+  .decor__item-2::before {
     top: 735px;
     right: 15%;
   }
 
-  .decor__item-2:after {
+  .decor__item-2::after {
     width: 51px;
     height: 101px;
     top: 117px;
@@ -154,7 +156,7 @@
     z-index: 10;
   }
 
-  .decor__item-3:before {
+  .decor__item-3::before {
     width: 62px;
     height: 101px;
     top: 195px;
@@ -163,7 +165,7 @@
     z-index: 30;
   }
 
-  .decor__item-3:after {
+  .decor__item-3::after {
     width: 61px;
     height: 101px;
     top: 35px;
@@ -171,12 +173,12 @@
     background-size: cover;
   }
 
-  .decor__item-4:before {
+  .decor__item-4::before {
     top: 753px;
     left: 67%;
   }
 
-  .decor__item-4:after {
+  .decor__item-4::after {
     width: 160px;
     height: 112.1px;
     top: 594px;
@@ -184,7 +186,7 @@
     background-size: cover;
   }
 
-  .decor__item-5:before {
+  .decor__item-5::before {
     width: 138px;
     height: 383px;
     top: 255px;
@@ -197,7 +199,7 @@
     background: @base-color;
   }
 
-  .decor__item-5:after {
+  .decor__item-5::after {
     width: 49px;
     height: 57px;
     top: 568px;
@@ -207,7 +209,7 @@
     letter-spacing: 4px;
   }
 
-  .decor__item-6:before {
+  .decor__item-6::before {
     content: "тестовое задание";
     position: absolute;
     width: 115px;
@@ -215,13 +217,14 @@
     top: 385px;
     left: -2.3%;
     .geometria-light-italic;
+
     font-size: 12px;
     transform: rotate(270deg);
     opacity: 0.4;
     z-index: 100;
   }
 
-  .decor__item-6:after {
+  .decor__item-6::after {
     content: "51";
     position: absolute;
     width: 31px;
@@ -229,6 +232,7 @@
     top: 127px;
     right: 58.5%;
     .geometria-heavy;
+
     font-size: 28px;
     letter-spacing: 2px;
     transform: rotate(270deg);
@@ -236,7 +240,7 @@
     z-index: 100;
   }
 
-  .decor__item-7:before {
+  .decor__item-7::before {
     content: "(1) (3)";
     position: absolute;
     width: 18px;
@@ -244,12 +248,13 @@
     top: 148px;
     left: 15.5%;
     .geometria-light;
+
     line-height: 80px;
     font-size: 14px;
     z-index: 100;
   }
 
-  .decor__item-7:after {
+  .decor__item-7::after {
     content: "URAL 03";
     position: absolute;
     width: 55px;
@@ -257,37 +262,38 @@
     top: 245px;
     left: 42.4%;
     .geometria-regular;
+
     line-height: 21px;
     font-size: 17px;
     letter-spacing: 2px;
-    color: #FFFFFF;
+    color: #fff;
     z-index: 100;
   }
 
-  .decor__item-8:before {
+  .decor__item-8::before {
     content: "";
     position: absolute;
     width: 100px;
     height: 100px;
     top: 215px;
     left: 40.6%;
-    border: 1px solid #000000;
+    border: 1px solid #000;
     border-radius: 50%;
     z-index: 100;
   }
 
-  .decor__item-8:after {
+  .decor__item-8::after {
     content: "";
     position: absolute;
     width: 17px;
     height: 3px;
     top: 593px;
     left: 76.5%;
-    background: #000000;
+    background: #000;
     z-index: 100;
   }
 
-  .decor__item-9:before {
+  .decor__item-9::before {
     content: "7";
     position: absolute;
     width: 10px;
@@ -295,11 +301,12 @@
     top: 598px;
     left: 76.4%;
     .geometria-heavy-italic;
+
     font-size: 17px;
     z-index: 100;
   }
 
-  .decor__item-9:after {
+  .decor__item-9::after {
     content: "";
     position: absolute;
     width: 213px;
@@ -312,19 +319,19 @@
     z-index: 100;
   }
 
-  .decor__item-10:before {
+  .decor__item-10::before {
     content: "";
     position: absolute;
     width: 41.66%;
     height: 616px;
     top: 184px;
     right: 50%;
-    background: linear-gradient(200deg, transparent, #FFFFFF);
+    background: linear-gradient(200deg, transparent, #fff);
     opacity: 0.65;
     z-index: 5;
   }
 
-  .decor__item-10:after {
+  .decor__item-10::after {
     content: "";
     position: absolute;
     width: 22.8px;
@@ -336,7 +343,7 @@
     z-index: 100;
   }
 
-  .decor__item-11:before {
+  .decor__item-11::before {
     content: "";
     position: absolute;
     width: 22.8px;
@@ -348,7 +355,7 @@
     z-index: 100;
   }
 
-  .decor__item-11:after {
+  .decor__item-11::after {
     content: "A";
     position: absolute;
     width: 17px;
@@ -356,11 +363,12 @@
     top: 745px;
     left: 18.5%;
     .philosopher-bold;
+
     font-size: 25px;
     z-index: 100;
   }
 
-  .decor__item-12:before {
+  .decor__item-12::before {
     content: "F";
     position: absolute;
     width: 13px;
@@ -368,11 +376,12 @@
     top: 710px;
     left: 23%;
     .philosopher-bold;
+
     font-size: 25px;
     z-index: 100;
   }
 
-  .decor__item-12:after {
+  .decor__item-12::after {
     content: "F";
     position: absolute;
     width: 13px;
@@ -380,11 +389,12 @@
     top: 755px;
     left: 27.5%;
     .philosopher-bold;
+
     font-size: 25px;
     z-index: 100;
   }
 
-  .decor__item-13:before {
+  .decor__item-13::before {
     content: "I";
     position: absolute;
     width: 8px;
@@ -392,11 +402,12 @@
     top: 727px;
     left: 31.6%;
     .philosopher-bold;
+
     font-size: 25px;
     z-index: 100;
   }
 
-  .decor__item-13:after {
+  .decor__item-13::after {
     content: "N";
     position: absolute;
     width: 17px;
@@ -404,11 +415,12 @@
     top: 766px;
     left: 36.2%;
     .philosopher-bold;
+
     font-size: 25px;
     z-index: 100;
   }
 
-  .decor__item-14:before {
+  .decor__item-14::before {
     content: "A";
     position: absolute;
     width: 17px;
@@ -416,11 +428,12 @@
     top: 725px;
     left: 64.6%;
     .philosopher-bold;
+
     font-size: 25px;
     z-index: 100;
   }
 
-  .decor__item-14:after {
+  .decor__item-14::after {
     content: "G";
     position: absolute;
     width: 18px;
@@ -428,11 +441,12 @@
     top: 731px;
     left: 71.6%;
     .philosopher-bold;
+
     font-size: 25px;
     z-index: 100;
   }
 
-  .decor__item-15:before {
+  .decor__item-15::before {
     content: "";
     position: absolute;
     width: 18px;
@@ -443,7 +457,7 @@
     z-index: 90;
   }
 
-  .decor__item-15:after {
+  .decor__item-15::after {
     content: "E";
     position: absolute;
     width: 15px;
@@ -451,6 +465,7 @@
     top: 758px;
     left: 79.4%;
     .philosopher-bold;
+
     font-size: 25px;
     z-index: 100;
   }
